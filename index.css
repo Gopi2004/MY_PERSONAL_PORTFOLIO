@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Open+Sans&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* overflow-y: hidden;  */
+    background-color: white;
+    padding-bottom: 60px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #964B00;
+    flex-wrap: wrap;
+    position: relative;
+}
+.portfolio-title {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.home-link, .nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 20px;
+}
+.home-icon, .nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    stroke: white;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.nav-separator {
+    color: white;
+    font-weight: bold;
+}
+.main-content {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    padding: 70px 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 50px;
+}
+.intro {
+    margin-left: 10%;
+}
+.intro h1, .intro h2 {
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
+    font-size: 2.9em;
+}
+.intro p {
+    font-size: 1.5em;
+    overflow: hidden;
+    border-right: .15em solid #964B00;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 5.0s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #964B00; }
+}
+.photo {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.about-me {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid black;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 20px;
+}
+.resume-btn {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #964B00;
+    color: white;
+    text-decoration: none;
+    border-radius: 500px;
+    font-size: 1.2em;
+}
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #964B00;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.bottom-nav a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.bottom-nav svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    stroke: white;
+}
+
+
